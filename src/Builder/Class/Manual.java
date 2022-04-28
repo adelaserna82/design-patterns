@@ -1,4 +1,4 @@
-package Builder;
+package Builder.Class;
 
 public class Manual {
     private String name;
@@ -29,4 +29,24 @@ public class Manual {
     public String getGps() {
         return gps;
     }
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setEngine(String engine) {
+        this.engine = engine;
+    }
+
+    public void setSeats(String seats) {
+        this.seats = seats;
+    }
+
+    public void setTripComputer(String tripComputer) {
+        this.tripComputer = tripComputer;
+    }
+
+    public void setGps(String gps) {
+        this.gps = gps;
+    }
+
 }

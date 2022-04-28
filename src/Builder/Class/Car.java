@@ -1,4 +1,4 @@
-package Builder;
+package Builder.Class;
 /*
 El uso del patrón Builder sólo tiene sentido cuando tus
 productos son bastante complejos y requieren una
@@ -33,4 +33,26 @@ public class Car {
     public String getGps() {
         return gps;
     }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setEngine(String engine) {
+        this.engine = engine;
+    }
+
+    public void setSeats(String seats) {
+        this.seats = seats;
+    }
+
+    public void setTripComputer(String tripComputer) {
+        this.tripComputer = tripComputer;
+    }
+
+    public void setGps(String gps) {
+        this.gps = gps;
+    }
+
+
 }

@@ -2,8 +2,9 @@ package Builder.Interfaces;
 
 public interface ICarComponentsBuilder {
     public void reset();
-    public void setSeats();
-    public void setEngine();
-    public void setTripComputer();
-    public void setGPS();
+    public void setSeats(String seats);
+    public void setEngine(String engine);
+    public void setTripComputer(String tripComputer);
+    public void setGPS(String gps);
+
 }
