@@ -14,11 +14,13 @@ public class Client {
         // One client can create a sofa with any concrete factory
         String factoryName = "Victorian";
         IFurnitureFactory factory = null;
-        if (factoryName.equals(factoryName)){
+        
+        if (factoryName == "Victorian"){
             factory = new VictorianFurnitureFactory();
         } else {
             factory = new ModernFurnitureFactory();
         }
+        
         showFurniture(factory);
     }
 

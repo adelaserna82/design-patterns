@@ -4,7 +4,7 @@ import  AbstractFactory.Products.Interfaces.ICoffeTable;
 
 public class VictorianCoffeTable implements ICoffeTable {
     public void hasLegs() {
-        System.out.println("Victorian coffe table has legs");
+        System.out.println("Victorian coffe table has 4 legs");
     }
 
     public void adjustHeigth() {
