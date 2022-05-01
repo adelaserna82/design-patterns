@@ -4,7 +4,7 @@ import AbstractFactory.Products.Interfaces.IChair;
 
 public class VictorianChair implements IChair {
     public void hasLegs() {
-        System.out.println("Victorian chair  has 4 legs.");
+        System.out.println("Victorian chair has 4 legs.");
     }
 
     public void sitOn() {
