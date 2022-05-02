@@ -2,6 +2,8 @@ package Adapter.Figuras;
 
 public class Adapter extends Cylinder {
 
+	private Cube figure;
+	
 	public Adapter (int r, String n) {
 		super(r, n);
 		

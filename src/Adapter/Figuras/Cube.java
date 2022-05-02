@@ -13,4 +13,8 @@ public class Cube {
 	public int getWidth() {
 		return width;
 	}
+
+	public String getName() {
+		return name;
+	}
 }
