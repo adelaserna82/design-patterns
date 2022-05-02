@@ -34,7 +34,7 @@ public class Client {
 		Adapter bigCubeAdapted = new Adapter(bigCube);
 		
 		if(hole.fits(smallCubeAdapted) == true) {
-			System.out.println("cabe en el agujero.");
+			System.out.println("Cabe en el agujero.");
 		} else {
 			System.out.println("No cabe en el agujero.");
 		}
