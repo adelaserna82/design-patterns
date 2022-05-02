@@ -25,31 +25,26 @@ public class Client {
 			System.out.println("El " + cylinder2.getName()  + " no cabe en el agujero");
 		}
 		
-		Cube smallCube = new Cube(5, "cubo pequeño");
-		Cube bigCube = new Cube(6, "cubo grande");
+		Cube smallCube = new Cube(4, "cubo pequeño");
+		Cube bigCube = new Cube(5, "cubo grande");
 
 	//	hole.fits(smallCube); *Esto no compila al ser tipos incompatibles, por ello debemos usar el adaptador*
 
 		
-	
+		Adapter smallCubeAdapted = new Adapter(smallCube);
+		Adapter bigCubeAdapted = new Adapter(bigCube);
 		
-		if(hole.fits(cylinder1) == true) {
-			System.out.println("El " + cylinder1.getName()  + " cabe en el agujero");
+		if(hole.fits(smallCubeAdapted) == true) {
+			System.out.println("El " + smallCubeAdapted.getName()  + " cabe en el agujero");
 		} else {
-			System.out.println("El " + cylinder1.getName()  + " no cabe en el agujero");
+			System.out.println("El " + smallCubeAdapted.getName()  + " no cabe en el agujero");
 		}
 		
-		if(hole.fits(cylinder2) == true) {
-			System.out.print("El " + cylinder2.getName()  + " cabe en el agujero");
+		if(hole.fits(bigCubeAdapted) == true) {
+			System.out.println("El " + bigCubeAdapted.getName()  + " cabe en el agujero");
 		} else {
-			System.out.print("El " + cylinder2.getName()  + " no cabe en el agujero");
-		}
-		
-	//	small_sqpeg_adapter = new SquarePegAdapter(small_sqpeg)
-	//	large_sqpeg_adapter = new SquarePegAdapter(large_sqpeg)
-	//	hole.fits(small_sqpeg_adapter) // verdadero
-	//	hole.fits(large_sqpeg_adapter) // falso
-	
-	}
+			System.out.println("El " + bigCubeAdapted.getName()  + " no cabe en el agujero");
+		}	
 
+	}
 }
