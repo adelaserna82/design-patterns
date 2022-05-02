@@ -8,8 +8,6 @@ public class Adapter extends Cylinder {
 	
 	public Adapter (Cube c) {
 		super(radius, name);
-//		name = c.getName();
-		System.out.println(c.getName());
 		figure = c;
 	}
 
