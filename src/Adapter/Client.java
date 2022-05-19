@@ -34,15 +34,15 @@ public class Client {
 		Adapter bigCubeAdapted = new Adapter(bigCube);
 		
 		if(hole.fits(smallCubeAdapted) == true) {
-			System.out.println("Cabe en el agujero.");
+			System.out.println(smallCube.getName() + " cabe en el agujero.");
 		} else {
-			System.out.println("No cabe en el agujero.");
+			System.out.println(smallCube.getName() + " no cabe en el agujero.");
 		}
 		
 		if(hole.fits(bigCubeAdapted) == true) {
-			System.out.println("Cabe en el agujero.");
+			System.out.println(bigCube.getName() + " cabe en el agujero.");
 		} else {
-			System.out.println("No cabe en el agujero.");
+			System.out.println(bigCube.getName() + " no cabe en el agujero.");
 		}	
 	}
 }
